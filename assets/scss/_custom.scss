@@ -1,0 +1,36 @@
+// 1. Color Scheme
+$smog: #050C0F;
+$fogra: #0A181F;
+$gunmetal: #143642;
+$bluewood: #263c41;
+$armadillo: #4a473e;
+$kabul: #5c4d3c;
+$clay: #815839;
+$brown-sugar: #A56336;
+$copper: #b76935;
+$sage: #CBC9AD;
+$balsa: #CBC9AD;
+$baby-powder: #F7F7F3;
+
+$primary: $gunmetal;
+$secondary: $copper;
+
+$almost-white: $baby-powder;
+$almost-black: $smog;
+
+// 2. Navigation modifiers
+$light-nav-bg: '';
+$dark-nav-bg: $fogra;
+$nav-link-font-family: $font-family-base;
+
+// 3. Body Typography Modifiers
+$body-font-weight: $global-weight-normal;
+$body-font-color: rgba($almost-black, .8);
+$body-font-color-on-dark: rgba($balsa, .85);
+$body-font-family: $font-family-base;
+
+// 4. Header Typography Modifiers
+$header-font-weight: $global-weight-extra-bold;
+$header-font-family: 'Martel', sans-serif;
+$header-font-color: $fogra;
+$header-font-color-on-dark: $baby-powder;

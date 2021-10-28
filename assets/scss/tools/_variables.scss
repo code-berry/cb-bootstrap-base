@@ -1,0 +1,214 @@
+$global-weight-normal: 400;
+$global-weight-medium: 500;
+$global-weight-bold: 700;
+$global-weight-extra-bold: 800;
+
+$mobile-vert-spacing-major: 2rem;
+$tablet-vert-spacing-major: 3rem;
+$desktop-vert-spacing-major: 4.5rem;
+
+$mobile-vert-spacing-minor: 1.5rem;
+$tablet-vert-spacing-minor: 2rem;
+$desktop-vert-spacing-minor: 3rem;
+
+$mobile-vert-spacing-inner: 1rem;
+$tablet-vert-spacing-inner: $mobile-vert-spacing-minor;
+$desktop-vert-spacing-inner: $tablet-vert-spacing-inner;
+
+.major-p-tb {
+    padding-top: $mobile-vert-spacing-major;
+    padding-bottom: $mobile-vert-spacing-major;
+    @include media-breakpoint-only(lg) {
+        padding-top: $tablet-vert-spacing-major;
+        padding-bottom: $tablet-vert-spacing-major;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-top: $desktop-vert-spacing-major;
+        padding-bottom: $desktop-vert-spacing-major;
+    }
+}
+
+.major-p-t {
+    padding-top: $mobile-vert-spacing-major;
+    @include media-breakpoint-only(lg) {
+        padding-top: $tablet-vert-spacing-major;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-top: $desktop-vert-spacing-major;
+    }
+}
+
+.major-p-b {
+    padding-bottom: $mobile-vert-spacing-major;
+    @include media-breakpoint-only(lg) {
+        padding-bottom: $tablet-vert-spacing-major;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-bottom: $desktop-vert-spacing-major;
+    }
+}
+
+.major-m-tb {
+    margin-top: $mobile-vert-spacing-major;
+    margin-bottom: $mobile-vert-spacing-major;
+    @include media-breakpoint-only(lg) {
+        margin-top: $tablet-vert-spacing-major;
+        margin-bottom: $tablet-vert-spacing-major;
+    }
+    @include media-breakpoint-up(xl) {
+        margin-top: $desktop-vert-spacing-major;
+        margin-bottom: $desktop-vert-spacing-major;
+    }
+}
+
+.major-m-t {
+    margin-top: $mobile-vert-spacing-major;
+    @include media-breakpoint-only(lg) {
+        margin-top: $tablet-vert-spacing-major;
+    }
+    @include media-breakpoint-up(xl) {
+        margin-top: $desktop-vert-spacing-major;
+    }
+}
+
+.major-m-b {
+    margin-bottom: $mobile-vert-spacing-major;
+    @include media-breakpoint-only(lg) {
+        margin-bottom: $tablet-vert-spacing-major;
+    }
+    @include media-breakpoint-up(xl) {
+        margin-bottom: $desktop-vert-spacing-major;
+    }
+}
+
+.minor-p-tb {
+    padding-top: $mobile-vert-spacing-minor;
+    padding-bottom: $mobile-vert-spacing-minor;
+    @include media-breakpoint-only(lg) {
+        padding-top: $tablet-vert-spacing-minor;
+        padding-bottom: $tablet-vert-spacing-minor;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-top: $desktop-vert-spacing-minor;
+        padding-bottom: $desktop-vert-spacing-minor;
+    }
+}
+
+.minor-p-t {
+    padding-top: $mobile-vert-spacing-minor;
+    @include media-breakpoint-only(lg) {
+        padding-top: $tablet-vert-spacing-minor;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-top: $desktop-vert-spacing-minor;
+    }
+}
+
+.minor-p-b {
+    padding-bottom: $mobile-vert-spacing-minor;
+    @include media-breakpoint-only(lg) {
+        padding-bottom: $tablet-vert-spacing-minor;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-bottom: $desktop-vert-spacing-minor;
+    }
+}
+
+.minor-m-tb {
+    margin-top: $mobile-vert-spacing-minor;
+    margin-bottom: $mobile-vert-spacing-minor;
+    @include media-breakpoint-only(lg) {
+        margin-top: $tablet-vert-spacing-minor;
+        margin-bottom: $tablet-vert-spacing-minor;
+    }
+    @include media-breakpoint-up(xl) {
+        margin-top: $desktop-vert-spacing-minor;
+        margin-bottom: $desktop-vert-spacing-minor;
+    }
+}
+
+.minor-m-t {
+    margin-top: $mobile-vert-spacing-minor;
+    @include media-breakpoint-only(lg) {
+        margin-top: $tablet-vert-spacing-minor;
+    }
+    @include media-breakpoint-up(xl) {
+        margin-top: $desktop-vert-spacing-minor;
+    }
+}
+
+.minor-m-b {
+    margin-bottom: $mobile-vert-spacing-minor;
+    @include media-breakpoint-only(lg) {
+        margin-bottom: $tablet-vert-spacing-minor;
+    }
+    @include media-breakpoint-up(xl) {
+        margin-bottom: $desktop-vert-spacing-minor;
+    }
+}
+
+.inner-p-tb {
+    padding-top: $mobile-vert-spacing-inner;
+    padding-bottom: $mobile-vert-spacing-inner;
+    @include media-breakpoint-only(lg) {
+        padding-top: $tablet-vert-spacing-inner;
+        padding-bottom: $tablet-vert-spacing-inner;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-top: $desktop-vert-spacing-inner;
+        padding-bottom: $desktop-vert-spacing-inner;
+    }
+}
+
+.inner-p-t {
+    padding-top: $mobile-vert-spacing-inner;
+    @include media-breakpoint-only(lg) {
+        padding-top: $tablet-vert-spacing-inner;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-top: $desktop-vert-spacing-inner;
+    }
+}
+
+.inner-p-b {
+    padding-bottom: $mobile-vert-spacing-inner;
+    @include media-breakpoint-only(lg) {
+        padding-bottom: $tablet-vert-spacing-inner;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-bottom: $desktop-vert-spacing-inner;
+    }
+}
+
+.inner-m-tb {
+    margin-top: $mobile-vert-spacing-inner;
+    margin-bottom: $mobile-vert-spacing-inner;
+    @include media-breakpoint-only(lg) {
+        margin-top: $tablet-vert-spacing-inner;
+        margin-bottom: $tablet-vert-spacing-inner;
+    }
+    @include media-breakpoint-up(xl) {
+        margin-top: $desktop-vert-spacing-inner;
+        margin-bottom: $desktop-vert-spacing-inner;
+    }
+}
+
+.inner-m-t {
+    margin-top: $mobile-vert-spacing-inner;
+    @include media-breakpoint-only(lg) {
+        margin-top: $tablet-vert-spacing-inner;
+    }
+    @include media-breakpoint-up(xl) {
+        margin-top: $desktop-vert-spacing-inner;
+    }
+}
+
+.inner-m-b {
+    margin-bottom: $mobile-vert-spacing-inner;
+    @include media-breakpoint-only(lg) {
+        margin-bottom: $tablet-vert-spacing-inner;
+    }
+    @include media-breakpoint-up(xl) {
+        margin-bottom: $desktop-vert-spacing-inner;
+    }
+}

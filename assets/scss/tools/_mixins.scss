@@ -1,0 +1,8 @@
+@mixin overlay($z:1, $h:'100%', $w: '100%', $t:0, $l:0) {
+    position: absolute;
+    height: #{$h};
+    width: #{$w};
+    top: #{$t};
+    left: #{$l};
+    z-index: #{$z};
+}
