@@ -9,6 +9,11 @@ get_template_part('template-parts/heros/hero-slider'); ?>
         'fieldname' => 'services',
         'subfield' => 'service',
     )); ?>
+    <?php get_template_part('template-parts/image-text-split', '', array(
+        'groupname' => 'text_image_section',
+    )); ?>
+
+    <?php get_template_part('template-parts/icon-split'); ?>
 </div>
 
 <?php get_footer();

@@ -520,11 +520,17 @@ function make_text_element($el, $str, $classname='') {
 	}
 }
 
-function show_acf_link($fieldname, $is_sub_field, $classname='') {
+function show_acf_link($fieldname, $is_sub_field, $classname='', $page_id='') {
+	global $post;
+
+	if($page_id=='') {
+		$page_id == $post->ID;
+	}
+
 	if($is_sub_field) {
 		$link = get_sub_field($fieldname);
 	} else {
-		$link = get_field($fieldname);
+		$link = get_field($fieldname, $page_id);
 	}
 
 	if($link) {

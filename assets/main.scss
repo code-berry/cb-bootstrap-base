@@ -116,7 +116,10 @@ $link-decoration: none;
 // 7ii. Components
 @import './scss/components/navbar';
 @import './scss/components/general';
+@import './scss/components/buttons';
+@import './scss/components/pre-header';
 
 // 7iii. Sections
 @import './scss/sections/hero-slider';
 @import './scss/sections/page-intro';
+@import './scss/sections/image-text-split';

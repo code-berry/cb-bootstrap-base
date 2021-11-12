@@ -1,0 +1,10 @@
+.btn {
+    &.btn-primary {
+        background-color: $primary;
+        color: $white;
+    }
+
+    &.btn-secondary {
+        background-color: $secondary;
+    }
+}

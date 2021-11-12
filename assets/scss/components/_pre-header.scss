@@ -1,0 +1,13 @@
+.pre-nav-header {
+    .row {
+        width: 100%;
+        .content-col {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .pre-nav-title {
+                color: $almost-white;
+            }
+        }
+    }
+}

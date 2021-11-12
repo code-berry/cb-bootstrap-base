@@ -1,5 +1,5 @@
 <?php if(have_rows('hero_slider')) { ?>
-    <section class="hero-slider minor-m-b">
+    <section class="hero-slider major-m-b">
         <?php while(have_rows('hero_slider')): the_row();
             $title = get_sub_field('title');
             $badge = get_sub_field('badge');

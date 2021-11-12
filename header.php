@@ -19,7 +19,9 @@
 	$navbar_scheme   = get_theme_mod( 'navbar_scheme', 'navbar-light bg-light' ); // Get custom meta-value.
 	$navbar_position = get_theme_mod( 'navbar_position', 'static' ); // Get custom meta-value.
 
-	$search_enabled  = get_theme_mod( 'search_enabled', '1' ); // Get custom meta-value.
+	$search_enabled  = get_theme_mod( 'search_enabled', '1' ); // Get custom meta-value
+
+	$pre_nav_title = get_field('pre_header_text', 'options');
 ?>
  
 <body <?php body_class(); ?>>
@@ -28,12 +30,15 @@
 
 <a href="#page-wrap" class="visually-hidden-focusable"><?php esc_html_e( 'Skip to main content', 'codeberry-base-theme' ); ?></a>
 
+
+
 <nav id="header" class="navbar navbar-expand-md <?php echo esc_attr( $navbar_scheme ); if ( isset( $navbar_position ) && 'fixed_top' === $navbar_position ) : echo ' fixed-top'; elseif ( isset( $navbar_position ) && 'fixed_bottom' === $navbar_position ) : echo ' fixed-bottom'; endif; if ( is_home() || is_front_page() ) : echo ' home'; endif; ?>">
 	<div class="pre-nav-header">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
-					We are carefully monitoring the COVID-19 situation. <a href="">Learn More</a>
+				<div class="col-12 content-col">
+					<?php make_text_element('span', $pre_nav_title, 'pre-nav-title'); ?>
+					<?php show_acf_link('pre_header_link', false, 'link inline', 'options'); ?>
 				</div>
 			</div>
 		</div>
